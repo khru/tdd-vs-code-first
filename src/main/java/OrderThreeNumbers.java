@@ -4,7 +4,6 @@ public class OrderThreeNumbers {
 
     public static String orderNumbers(int first,int second, int third) {
         int aux = 0;
-
         if (second > third) {
             aux = second;
             second = third;

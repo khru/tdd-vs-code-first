@@ -42,7 +42,8 @@ public class OrderThreeNumbersTest {
     })
     public void should_ordinated_last_number_as_first(int first, int second, int third, String expected) {
 
-        assertEquals(expected, OrderThreeNumbers.orderNumbers(first,second, third));
+        assertEquals(expected,
+                OrderThreeNumbers.orderNumbers(first,second, third));
     }
 
     @ParameterizedTest
@@ -52,7 +53,6 @@ public class OrderThreeNumbersTest {
             "200,0,100,'0,100,200'",
     })
     public void should_ordinate_big_smallest_and_middle_number(int first, int second, int third, String expected) {
-
         assertEquals(expected, OrderThreeNumbers.orderNumbers(first,second, third));
     }
 }
